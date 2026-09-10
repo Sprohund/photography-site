@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Before &amp; After Edits — Aidan Southivong</title>
+<style>
+  :root{
+    --line:#e8e8e4;
+    --accent:#c6543f;
+  }
+  html[data-theme="light"]{
+    --bg:#ffffff; --ink:#161615; --muted:#767670; --line:#e8e8e4; --card:#f4f4f1;
+  }
+  html[data-theme="dark"]{
+    --bg:#121211; --ink:#f4f3f0; --muted:#9c9a93; --line:#2b2b28; --card:#1d1d1b;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit; text-decoration:none;}
+  img{display:block; width:100%; height:auto;}
+
+  header{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:24px 40px; border-bottom:1px solid var(--line);
+  }
+  .logo{display:inline-flex; align-items:center; gap:9px; font-size:18px; font-weight:800; letter-spacing:0.04em;}
+  .logo svg{width:20px; height:20px; flex-shrink:0;}
+  .logo span{color:var(--accent);}
+  .back-link{font-size:12px; letter-spacing:0.1em; text-transform:uppercase; font-weight:700; color:var(--muted);}
+  .back-link:hover{color:var(--ink);}
+
+  .intro{max-width:760px; margin:0 auto; padding:64px 40px 16px; text-align:center;}
+  .intro .eyebrow{font-size:12px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); margin-bottom:14px;}
+  .intro h1{font-weight:800; text-transform:uppercase; font-size:clamp(26px,4vw,38px); letter-spacing:-0.01em; margin-bottom:14px;}
+  .intro p{color:var(--muted); font-size:15px;}
+
+  .pairs{max-width:1800px; margin:0 auto; padding:40px 60px 120px; display:flex; flex-direction:column; gap:72px;}
+  .pair-label{font-size:13px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin-bottom:14px;}
+  .pair{display:grid; grid-template-columns:1fr 1fr; gap:8px;}
+  .frame{position:relative; background:var(--card); overflow:hidden; display:flex; align-items:center; justify-content:center;}
+  .frame .tag{
+    position:absolute; top:14px; left:14px; z-index:2;
+    background:rgba(0,0,0,0.65); color:#fff; font-size:11px; font-weight:800;
+    letter-spacing:0.1em; text-transform:uppercase; padding:6px 12px;
+  }
+  .frame img{width:100%; height:100%; object-fit:contain;}
+
+  @media (max-width:900px){
+    .pairs{padding:32px 20px 90px; gap:48px;}
+    .pair{grid-template-columns:1fr; gap:8px;}
+  }
+  @media (max-width:640px){
+    header{padding:18px 20px;}
+    .intro{padding:48px 20px 12px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="14" r="3.5"/></svg>
+    AIDAN <span>SOUTHIVONG</span>
+  </div>
+  <a class="back-link" href="index.html">&larr; Back to site</a>
+</header>
+
+<div class="intro">
+  <div class="eyebrow">Behind the Edit</div>
+  <h1>Before &amp; After</h1>
+  <p>A look at the editing process behind select photos — straight out of camera versus the final graded result.</p>
+</div>
+
+<div class="pairs">
+
+
+  <div>
+    <div class="pair-label">Edit 01</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E1B.jpg" alt="Before edit 01">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E1A.jpg" alt="After edit 01">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 02</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E2B.jpg" alt="Before edit 02">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E2A.jpg" alt="After edit 02">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 03</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E3B.jpg" alt="Before edit 03">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E3A.jpg" alt="After edit 03">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 04</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E4B.jpg" alt="Before edit 04">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E4A.jpg" alt="After edit 04">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 05</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E5B.jpg" alt="Before edit 05">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E5A.jpg" alt="After edit 05">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 06</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E6B.jpg" alt="Before edit 06">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E6A.jpg" alt="After edit 06">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 07</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E7B.jpg" alt="Before edit 07">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E7A.jpg" alt="After edit 07">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 08</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E8B.jpg" alt="Before edit 08">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E8A.jpg" alt="After edit 08">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 09</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E9B.jpg" alt="Before edit 09">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E9A.jpg" alt="After edit 09">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 10</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E10B.jpg" alt="Before edit 10">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E10A.jpg" alt="After edit 10">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 11</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E11B.jpg" alt="Before edit 11">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E11A.jpg" alt="After edit 11">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 12</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E12B.jpg" alt="Before edit 12">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E12A.jpg" alt="After edit 12">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 13</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E13B.jpg" alt="Before edit 13">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E13A.jpg" alt="After edit 13">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 14</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E14B.jpg" alt="Before edit 14">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E14A.jpg" alt="After edit 14">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 15</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E15B.jpg" alt="Before edit 15">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E15A.jpg" alt="After edit 15">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 16</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E16B.jpg" alt="Before edit 16">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E16A.jpg" alt="After edit 16">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 17</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E17B.jpg" alt="Before edit 17">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E17A.jpg" alt="After edit 17">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 18</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E18B.jpg" alt="Before edit 18">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E18A.jpg" alt="After edit 18">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 19</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E19B.jpg" alt="Before edit 19">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E19A.jpg" alt="After edit 19">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 20</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E20B.jpg" alt="Before edit 20">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E20A.jpg" alt="After edit 20">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 21</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E21B.jpg" alt="Before edit 21">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E21A.jpg" alt="After edit 21">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 22</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E22B.jpg" alt="Before edit 22">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E22A.jpg" alt="After edit 22">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 23</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E23B.jpg" alt="Before edit 23">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E23A.jpg" alt="After edit 23">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 24</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E24B.jpg" alt="Before edit 24">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E24A.jpg" alt="After edit 24">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 25</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E25B.jpg" alt="Before edit 25">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E25A.jpg" alt="After edit 25">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 26</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E26B.jpg" alt="Before edit 26">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E26A.jpg" alt="After edit 26">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 27</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E27B.jpg" alt="Before edit 27">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E27A.jpg" alt="After edit 27">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 28</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E28B.jpg" alt="Before edit 28">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E28A.jpg" alt="After edit 28">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 29</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E29B.jpg" alt="Before edit 29">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E29A.jpg" alt="After edit 29">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 30</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E30B.jpg" alt="Before edit 30">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E30A.jpg" alt="After edit 30">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 31</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E31B.jpg" alt="Before edit 31">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E31A.jpg" alt="After edit 31">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 32</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E32B.jpg" alt="Before edit 32">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E32A.jpg" alt="After edit 32">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 33</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E33B.jpg" alt="Before edit 33">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E33A.jpg" alt="After edit 33">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 34</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E34B.jpg" alt="Before edit 34">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E34A.jpg" alt="After edit 34">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 35</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E35B.jpg" alt="Before edit 35">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E35A.jpg" alt="After edit 35">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 36</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E36B.jpg" alt="Before edit 36">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E36A.jpg" alt="After edit 36">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 37</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E37B.jpg" alt="Before edit 37">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E37A.jpg" alt="After edit 37">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 38</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E38B.jpg" alt="Before edit 38">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E38A.jpg" alt="After edit 38">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 39</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E39B.jpg" alt="Before edit 39">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E39A.jpg" alt="After edit 39">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 40</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E40B.jpg" alt="Before edit 40">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E40A.jpg" alt="After edit 40">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 41</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E41B.jpg" alt="Before edit 41">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E41A.jpg" alt="After edit 41">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 42</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E42B.jpg" alt="Before edit 42">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E42A.jpg" alt="After edit 42">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 43</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E43B.jpg" alt="Before edit 43">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E43A.jpg" alt="After edit 43">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 44</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E44B.jpg" alt="Before edit 44">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E44A.jpg" alt="After edit 44">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 45</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E45B.jpg" alt="Before edit 45">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E45A.jpg" alt="After edit 45">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 46</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E46B.jpg" alt="Before edit 46">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E46A.jpg" alt="After edit 46">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 47</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E47B.jpg" alt="Before edit 47">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E47A.jpg" alt="After edit 47">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 48</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E48B.jpg" alt="Before edit 48">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E48A.jpg" alt="After edit 48">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 49</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E49B.jpg" alt="Before edit 49">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E49A.jpg" alt="After edit 49">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 50</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E50B.jpg" alt="Before edit 50">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E50A.jpg" alt="After edit 50">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 51</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E51B.jpg" alt="Before edit 51">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E51A.jpg" alt="After edit 51">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 52</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E52B.jpg" alt="Before edit 52">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E52A.jpg" alt="After edit 52">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 53</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E53B.jpg" alt="Before edit 53">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E53A.jpg" alt="After edit 53">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 54</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E54B.jpg" alt="Before edit 54">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E54A.jpg" alt="After edit 54">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="pair-label">Edit 55</div>
+    <div class="pair">
+      <div class="frame">
+        <div class="tag">Before</div>
+        <img src="photos/edits/E55B.jpg" alt="Before edit 55">
+      </div>
+      <div class="frame">
+        <div class="tag">After</div>
+        <img src="photos/edits/E55A.jpg" alt="After edit 55">
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<script>
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+</script>
+
+</body>
+</html>
